@@ -388,13 +388,11 @@
     text-align: center;
 }
 
-/* ---------- GLOBAL FIXES ---------- */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* ---------- TABLETS (<= 1024px) ---------- */
 @media (max-width: 1024px) {
   .site-header {
     padding: 20px;
@@ -430,7 +428,6 @@ img {
   }
 }
 
-/* ---------- PHONES (<= 768px) ---------- */
 @media (max-width: 768px) {
   .site-header {
     flex-direction: column;
