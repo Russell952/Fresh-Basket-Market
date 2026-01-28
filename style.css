@@ -149,6 +149,51 @@
     gap: 10px;
 }
 
+@media (max-width: 1062px) {
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-media {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .workflow-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px;
+    }
+}
+
 .workflow-header h3 {
     font-size: 30px;
     font-weight: 500;
@@ -341,4 +386,123 @@
 .copy {
     font-size: 14px;
     text-align: center;
+}
+
+/* ---------- GLOBAL FIXES ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- TABLETS (<= 1024px) ---------- */
+@media (max-width: 1024px) {
+  .site-header {
+    padding: 20px;
+  }
+
+  .hero-section {
+    margin: 30px;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-media {
+    width: 100%;
+    height: auto;
+  }
+
+  .workflow-cards,
+  .catalog-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .workflow-card,
+  .catalog-card {
+    max-width: 400px;
+  }
+}
+
+/* ---------- PHONES (<= 768px) ---------- */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero-section {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-points {
+    align-items: center;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .workflow-section,
+  .catalog-section,
+  .signup-section {
+    padding: 30px 20px;
+  }
+
+  .signup-box {
+    padding: 30px 20px;
+  }
+
+  .signup-box h2 {
+    font-size: 28px;
+  }
+
+  .site-footer {
+    padding: 30px 20px;
+    text-align: center;
+  }
+}
+
+/* ---------- SMALL PHONES (<= 480px) ---------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .workflow-header h3,
+  .catalog-header h3 {
+    font-size: 24px;
+  }
+
+  .workflow-card,
+  .catalog-card {
+    padding: 20px;
+  }
 }
