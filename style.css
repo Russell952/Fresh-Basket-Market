@@ -487,7 +487,6 @@ img {
   }
 }
 
-/* ---------- SMALL PHONES (<= 480px) ---------- */
 @media (max-width: 480px) {
   .hero-title {
     font-size: 26px;
